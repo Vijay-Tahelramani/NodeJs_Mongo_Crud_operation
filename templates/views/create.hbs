@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Loading title in tab bar -->
+        <title>{{title}}</title>
+
+        <!-- Loading CSS Style sheet -->
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+
+        <!-- Body Root Div-->
+        <div id="root-dv" class="root-dv">
+
+            <!-- Body Header Partial Div-->
+            <div id="bh-dv" class="bh-dv fixed-head">
+                <!-- Loading Header Partial-->
+            {{>header}}
+            </div>
+
+            <!-- Main Body Content Div Partial Div-->
+            <div id="bm-dv" class="bm-dv">
+
+                <div class="bm-dv1">
+                    <div class="content-center">
+                        <form id="user-form">
+                            <input type="text" placeholder="First Name" id="first-name" class="input-look"/><br/>
+                            <input type="text" placeholder="Last Name" id="last-name" class="input-look"/><br/>
+                            <input type="text" placeholder="Email" id="email" class="input-look"/><br/>
+                            <input type="date" placeholder="Date Of Birth" id="date-of-birth" max={{maxDate}} class="input-look"/><br/>
+                            <textarea rows="3" placeholder="Short BIO" id="short-bio"></textarea><br/>
+
+                            <p id="info-message"></p>
+                            <button id="signup-btn" class="form-btn round-corner">Sign Up</button>
+                        </form>
+                        <button id="view-btn" hidden class="form-alt-btn round-corner">View User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body Footer Partial Div-->
+        <div class="content-center">
+            <!-- Loading Footer Partial-->
+            {{>footer}}
+
+            <!-- Loading All Required JavaScripts-->
+            <script src="/js/addUser.js"></script>
+        </div>
+        
+    </body>
+</html>

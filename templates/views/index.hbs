@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Loading title in tab bar -->
+        <title>{{title}}</title>
+
+        <!-- Loading CSS Style sheet -->
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+
+        <!-- Body Root Div-->
+        <div id="root-dv" class="root-dv">
+
+            <!-- Body Header Partial Div-->
+            <div id="bh-dv" class="bh-dv fixed-head">
+                <!-- Loading Header Partial-->
+            {{>header}}
+            </div>
+
+            <!-- Main Body Content Div Partial Div-->
+            <div id="bm-dv" class="bm-dv">
+                
+                <div class="bm-dv1 dm-dv-box">
+                    <div class="content-center">
+                    <div>
+                        <a href="/create" class="button-link round-corner">Create User</a>
+                    </div>
+                    <div>
+                        <a href="/view" class="button-link round-corner">View User</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body Footer Partial Div-->
+        <div class="content-center">
+            <!-- Loading Footer Partial-->
+            {{>footer}}
+        </div>
+        
+    </body>
+</html>

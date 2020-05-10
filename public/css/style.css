@@ -1,0 +1,201 @@
+body{
+    color: #253665; /* set color of text in whole body */
+    font-family: Verdana;
+    margin: auto;
+    
+    /* To Send Footer always at bottom step-1 */
+    display: flex;
+    flex-direction: column; /* Everything in body goes to top to bottm */
+    min-height: 100vh; /* minimum height equal to browser height it takes 100 percent height of browser*/
+}
+
+.root-dv{
+
+    /* To Send Footer always at bottom step-2 and done! */
+    flex-grow: 1; /* This will take whole left space of body */
+}
+
+/*------- Body Header partial Div CSS Start --------*/
+
+.bh-dv{
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.fixed-head{
+    position: fixed;
+    width: 100%;
+}
+
+/*------- Body Header partial Div CSS End --------*/
+
+
+/*------- Header CSS Start --------*/
+
+.hm-dv{
+    padding: 8px;
+}
+
+.hs-dv1{
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header h1{
+    color: #e97a68;
+}
+
+/*------- Header CSS End --------*/
+
+
+/*------- Body Main Content CSS Start --------*/
+
+.bm-dv{
+    padding: 112px 64px 0 64px; /* top-right-bottom-left */
+    margin: 0;
+}
+
+.bm-dv1{
+    margin: 64px auto; /* top-bottom left-right */
+    padding: 0;    
+}
+
+.dm-dv-box{
+
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.content-center{
+    text-align: center;
+}
+
+.div-center{
+    margin: auto;
+}
+
+.button-link{
+
+    color: #ffffff;
+    text-decoration: none;
+    background: #e97a68;
+    padding: 48px 120px;
+    display: block;
+    margin: 16px;
+    font-size: large;
+}
+
+.error-content{
+    color: red;
+}
+
+.success-content{
+    color: green;
+}
+
+.round-corner{
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+textarea{
+    border: 1px solid #cccccc;
+    padding: 8px;
+    margin: 8px;
+    width: 600px;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+.input-look{
+    border: 1px solid #cccccc;
+    padding: 8px;
+    margin: 8px;
+    width: 600px;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+.search-input-look{
+    border: 1px solid #cccccc;
+    padding: 16px;
+    margin: 8px 0;
+    width: 600px;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+
+
+select{
+    -webkit-appearance: unset;
+    -moz-appearance: unset;
+    appearance: unset;
+    background: transparent;
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid #e97a68;
+    font-family: Verdana;
+    font-size: medium;
+}
+
+
+
+input:focus,textarea:focus,button:focus,select:focus {
+    border: 1px solid #e97a68;
+    outline: 0 none;
+}
+
+.form-btn{
+    cursor: pointer;
+    border: 1px solid #e97a68;
+    background: #e97a68;
+    color: #ffffff;
+    font-size: large;
+    font-family: Verdana;
+    padding: 16px 40px;
+    margin: 8px;
+}
+
+.form-alt-btn{
+    cursor: pointer;
+    border: 1px solid #e97a68;
+    background: #ffffff;
+    color: #e97a68;
+    font-size: large;
+    font-family: Verdana;
+    padding: 16px 40px;
+    margin: 8px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #071b37;
+}
+
+td{
+    text-align: center;
+    padding: 16px 24px;
+}
+
+
+
+/*------- Body Main Content CSS End --------*/
+
+
+/*------- Footer CSS Start --------*/
+
+footer{
+    color: #ffffff;
+    border-top: 1px solid #eeeeee; /* width border-type color */
+    margin-top: 16px;
+    background: #071b37;
+    width: 100%;
+}
+
+.bottom-container{
+    padding: 16px;
+}
+
+/*------- Footer CSS End --------*/

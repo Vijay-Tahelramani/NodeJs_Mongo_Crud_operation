@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Loading title in tab bar -->
+        <title>{{title}}</title>
+
+        <!-- Loading CSS Style sheet -->
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+
+        <!-- Body Root Div-->
+        <div id="root-dv" class="root-dv">
+
+            <!-- Body Header Partial Div-->
+            <div id="bh-dv" class="bh-dv fixed-head">
+                <!-- Loading Header Partial-->
+            {{>header}}
+            </div>
+
+            <!-- Main Body Content Div Partial Div-->
+            <div id="bm-dv" class="bm-dv">
+
+                <div class="bm-dv1">
+                    <div class="content-center">
+                    <div id="">
+                        <p>Note: Search Feature and Sort Feature works individually.</p>
+                        <form id="search-form">
+                            <input type="text" placeholder="Enter First Name" id="search-name" class="search-input-look"/>
+                            <button id="search-btn" class="form-btn round-corner">Search</button>
+                            <label for="sort-data">Sort By:</label>
+
+                            <select id="sort-data">
+                                <option value="">Select</option>
+                                <option value="firstName">First Name</option>
+                                <option value="lastName">Last Name</option>
+                                <option value="dateOfBirth">Date Of Birth</option>
+                            </select>
+                            <br/>
+                            <p id="search-message"></p>
+                        </form>
+                    </div>
+                    <div id="table-div">
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body Footer Partial Div-->
+        <div class="content-center">
+            <!-- Loading Footer Partial-->
+            {{>footer}}
+        </div>
+        
+
+        <!-- Loading All Required JavaScripts-->
+        <script src="/js/viewUser.js"></script>
+    </body>
+</html>
